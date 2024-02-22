@@ -21,7 +21,7 @@ const Detail = () => {
       setTodo()
     };
     detailTodo()
-  }, []);
+  }, [todoId]);
 
   const handleDeleteTodoItem = async (id) => {
     dispatch(deleteTodoThunk(id));

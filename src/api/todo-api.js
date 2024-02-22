@@ -46,7 +46,7 @@ export const createTodo = async (todo) => {
 // 특정 ID의 TODO 삭제하기 (DELETE /todos/:id)
 export const deleteTodo = async (id) => {
   await todoClient.delete(`/${id}`);
-  return id
+  return id;
   // TODO - axios를 사용하여 DELETE /:id 요청을 보내고 삭제된 ID를 반환하는 코드를 작성하세요.
   // NOTE - 힌트:
   // - URL 파라미터에 id 값을 전달하세요.
